@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>💌 Ett brev från Wilmer</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fff6f6;
+      color: #3a3a3a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    #message {
+      font-size: 1.6em;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Dagens lilla kärleksbrev 💖</h1>
+  <div id="message"></div>
+
+  <script>
+    const messages = [
+      "Jag vet inte om du förstår hur mycket du betyder för mig.",
+      "Varje gång jag tänker på dig känns det som solen tittar fram.",
+      "Du är den tryggaste platsen jag vet.",
+      "Du får världen att kännas lite mindre läskig.",
+      "Om jag kunde frysa tiden, hade jag gjort det varje gång du skrattade.",
+      "Du är inte bara min flickvän, du är min bästa vän också.",
+      "Tänk att jag får kalla dig min.",
+      "Att ha dig är det bästa som hänt mig.",
+      "När jag skriver detta, ler jag. För du är värd varenda tanke."
+      "Du är min framtida fru, kom ihåg det."
+      "Du kommer vara den bästa mamman till våra barn."
+      "Jag älskar dig ceyla, så mycket."
+    ];
+
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById('message').innerText = randomMessage;
+  </script>
+</body>
+</html>
